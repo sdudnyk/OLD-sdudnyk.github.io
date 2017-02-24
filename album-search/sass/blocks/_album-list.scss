@@ -8,14 +8,15 @@
     display: -ms-flex;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 25px 75px;
     border-top: 1px solid $gray-color;
     &:first-child{
       border-top: none;
     }
-    .info{
+    .infobox{
       width: 75%;
-      .title, .artist{
+      .title, .info{
         &:after{
           content: '';
           display: block;
@@ -32,7 +33,7 @@
           font-weight: 600;
           margin: 0;
         }
-        .album-type{
+        .above-title{
           font-size: 12px;
           color: $dark-gray-color;
         }

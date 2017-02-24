@@ -22,14 +22,16 @@ function mainController($http, spotifyFactory, iTunesFactory) {
       vm.albumsSpotify = data.data.albums.items.filter(function (item) {
         return item.artists[0].name.toLowerCase() == vm.query.toLowerCase();
       });
-      console.log('spotify: ', vm.albumsSpotify);
     });
   }
 
   function getItunesData(){
     iTunesFactory.search({ query: vm.query}, function(data) {
-      vm.albumsItunes = data.results;
+      console.log(data.results); /*_*/
+      vm.albumsItunes = data.results.filter(function (item) {
+        return item.artistName.toLowerCase() == vm.query.toLowerCase();
+      });;
     });
-    console.log('iTunes: ', vm.albumsItunes);
+
   }
 }
