@@ -16,19 +16,22 @@ body{
     width: 350px;
     height: 231px;
     display: block;
-    padding: 50px 0;
+    padding: 20px 0;
     margin: 0 auto;
-    transition: height 1s linear, width 1s linear, padding 1s linear;
+    transition: height .7s linear, width .7s linear;
   }
   &__image.small{
-    width: 200px;
-    height: 132px;
-    padding: 20px 0;
+    width: 160px;
+    height: 106px;
   }
 }
 
 .container{
-  width: 1180px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.content{
   min-height: 260px;
   box-sizing: border-box;
   padding: 75px 0 20px;
@@ -36,6 +39,7 @@ body{
   border-radius: $border-radius;
   background-color: #fff;
   margin-bottom: 50px;
+  border: 1px solid $border-color;
 }
 
 .search-form{
@@ -47,7 +51,8 @@ body{
     border-radius: $border-radius;
     border: 1px solid $dark-gray-color;
     outline: 0;
-    padding: 2px 10px;
-
+    padding: 2px 50px 2px 10px;
+    background: url('../images/search-icon.png') 99% 50% no-repeat;
+    background-size: 25px 25px;
   }
 }

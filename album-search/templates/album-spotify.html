@@ -1,0 +1,19 @@
+<li class="album" ng-class="$even ? 'even-row' : 'odd-row'">
+  <div class="infobox">
+    <div class="title">
+      <h3>{{album.name}}</h3>
+      <span class="above-title">
+        {{album.album_type}}
+      </span>
+    </div>
+    <div class="info"><p>by {{album.artists[0].name}}</p></div>
+    <div class="listen">
+      <p>
+        <a href="{{album.external_urls.spotify}}" target="_blank">Listen on Spotify</a>
+      </p>
+    </div>
+  </div>
+  <div class="image">
+    <img ng-src="{{album.images[1].url}}" alt="{{album.name}}" width="150" height="150">
+  </div>
+</li>

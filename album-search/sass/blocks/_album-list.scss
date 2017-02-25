@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 25px 75px;
-    border-top: 1px solid $gray-color;
+    border-top: 1px solid $border-color;
     &:first-child{
       border-top: none;
     }
@@ -23,7 +23,7 @@
           width: 80%;
           height: 1px;
           margin-top: 10px;
-          background-color: $gray-color;
+          background-color: $border-color;
         }
       }
 
@@ -44,6 +44,6 @@
     }
   }
   .album.odd-row{
-    background-color: #f8f8ff;
+    background-color: #f7f7f7;
   }
 }

@@ -1,0 +1,23 @@
+<li class="album" ng-class="$even ? 'even-row' : 'odd-row'">
+  <div class="infobox">
+    <div class="title">
+      <h3>{{album.collectionName}}</h3>
+      <span class="above-title">
+        {{album.copyright}}
+      </span>
+    </div>
+    <div class="info">
+      <p>by {{album.artistName}}</p>
+      <p>Genre: {{album.primaryGenreName}}</p>
+      <p>Tracks: {{album.trackCount}}</p>
+    </div>
+    <div class="listen">
+      <p>
+        <a href="{{album.collectionViewUrl}}" target="_blank">Listen on ITunes</a>
+      </p>
+    </div>
+  </div>
+  <div class="image">
+    <img ng-src="{{album.artworkUrl100}}" alt="{{album.name}}" width="125" height="125">
+  </div>
+</li>
